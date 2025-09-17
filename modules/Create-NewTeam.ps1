@@ -27,7 +27,7 @@
 
 
  .EXAMPLE
-  Create-NewTeam -tName "Test Team" -tDescription "" -tOwner "firstname.lastname@svenljunga.se" -tVisiblity "private" -tGuests $False -Force $False
+  Create-NewTeam -tName "Test Team" -tDescription "" -tOwner "firstname.lastname@svenljunga.se" -tVisiblity "private" -tGuests $False -tTemplate "project" -Force $False
  
 #>
 
