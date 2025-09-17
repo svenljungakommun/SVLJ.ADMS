@@ -34,7 +34,7 @@ Key roles include:
   - *Personec P* (HR system)  
   - *Skatteverket* (national identity registry)  
   - *IST* (education management)  
-  - *Microsoft 365* (Azure AD, Teams, Exchange Online, SharePoint)  
+  - *Microsoft 365* (Entra, Graph, Teams, Exchange Online, SharePoint)  
   - Other municipal and governmental services
   - API for integration with other services
 
