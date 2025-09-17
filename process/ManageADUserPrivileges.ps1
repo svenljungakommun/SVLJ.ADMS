@@ -27,7 +27,9 @@
   - fEnabled
   - write-log
   - Get-ADSIUsers
-  - GET-SQL
+  - Get-ADSIManager
+  - Get-Employees
+  - Get-tGroups
   - Send-HTMLErrorMessage
   - Add-GroupMembershipBy
   - Remove-GroupMembershipBy
