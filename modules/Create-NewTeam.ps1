@@ -40,6 +40,7 @@ function Create-NewTeam() {
         [Parameter(Mandatory=$True)][string]$tOwner,
         [Parameter(Mandatory=$True)][string]$tVisiblity,
         [Parameter(Mandatory=$True)][bool]$tGuests,
+		[string]$tTemplate = "standard"
         [bool]$Force = $False
     )
 
@@ -78,7 +79,7 @@ function Create-NewTeam() {
 
             # Set Template
             $tParams = @{
-                "Template@odata.bind" = “https://graph.microsoft.com/v1.0/teamsTemplates('standard')”
+                "Template@odata.bind" = “https://graph.microsoft.com/v1.0/teamsTemplates('$tTemplate')”
                 DisplayName = "$($tName)"
                 Description = "$($tDescription)"
                 Visibility = "$($tVisiblity)"
