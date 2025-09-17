@@ -35,7 +35,8 @@ Key roles include:
   - *Skatteverket* (national identity registry)  
   - *IST* (education management)  
   - *Microsoft 365* (Azure AD, Teams, Exchange Online, SharePoint)  
-  - Other municipal and governmental services  
+  - Other municipal and governmental services
+  - API for integration with other services
 
 - 🖥️ **Self-Service & Delegation**  
   - Web-based e-services for users  
