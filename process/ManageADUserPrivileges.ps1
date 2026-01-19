@@ -146,7 +146,7 @@ Function ManageADUserPrivileges {
                                 requiredWorkAddress"
                                 -filter "automaticDeProvisioning = '1'
                                 and groupEnabled = '1'
-                                and distinguishedName = '$($_)"
+                                and distinguishedName = '$($_)'"
                             ) | % {
                                 <#
                                     Add to array of matched groups
@@ -170,7 +170,7 @@ Function ManageADUserPrivileges {
                         <#
                             Fetch employments
                         #>
-                        $(Get-Employees -fields "*" -filter "active") | % {
+                        $(Get-Employees -fields "*" -filter "active AND ssn = '$($UserVars.ssn)'") | % {
 
                             <#
                                 Create array with employments
@@ -240,7 +240,7 @@ Function ManageADUserPrivileges {
                                         ( $($actualDepartment) -ne $($_.requiredDepartment) ) -or
                                         ( $($actualCompany)    -ne $($_.requiredCompany) ) -or
                                         ( $($actualWorkPlace)  -ne $($_.requiredWorkPlace) ) -or
-                                        ( $($requiredWorkAddress) -ne $($_.requiredWorkAddress) )
+                                        ( $($actualWorkAddress) -ne $($_.requiredWorkAddress) )
                                     ) {
                                         $_.Remove = '1'
                                     }
