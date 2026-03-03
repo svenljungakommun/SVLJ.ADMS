@@ -39,8 +39,8 @@ Key roles include:
   - API for integration with other services
 
 - 🖥️ **Self-Service & Delegation**  
-  - Web-based e-services for users  
-  - Delegated administration for line managers  
+  - Web-based e-services for users and managers
+  - Delegated administration for managers  
 
 - ⚙️ **Technology Stack**  
   - PowerShell for orchestration and automation  
